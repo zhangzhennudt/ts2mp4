@@ -36,11 +36,11 @@ def ts2mp4(dir,path):
     os.system(cmd)
     cmd = 'ffmpeg -i '+dir+'new.ts -c copy '+dir+mp4
     os.system(cmd)
-    shutil.copy(dir+mp4,"D:\\codepython\\mp4\\"+mp4)
+    shutil.copy(dir+mp4,"your mp4 outputpath"+mp4)
     print("done")
     
 if __name__=='__main__':
-    path="D:\\codepython\\m3u8\\"
+    path="your ts dir path"
     dirs=get_dirs(path)
     number=0
     for dir in dirs:
